@@ -1,0 +1,5 @@
+{
+  "name": "HaskellDevContainer",
+  "image": "haskell:9",
+  "extensions": ["haskell.haskell"]
+}
