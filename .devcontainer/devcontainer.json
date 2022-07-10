@@ -1,5 +1,5 @@
 {
   "name": "HaskellDevContainer",
   "image": "haskell:9",
-  "extensions": ["haskell.haskell"]
+  "extensions": ["haskell.haskell", "vigoo.stylish-haskell", "justusadam.language-haskell"]
 }

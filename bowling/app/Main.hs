@@ -1,6 +1,6 @@
 module Main where
 
-import Calc (calcOne, calcTwo, calcThree)
+import           Calc (calcOne, calcThree, calcTwo)
 
 toInt :: (String -> Int)
 toInt x = read x ::Int
@@ -19,9 +19,9 @@ board = (concat ["| " ++ x ++ " "| x <- scoreList])
 
 -- score :: [(Int, Int, Int)] -> String
 -- (concat [ "| " ++ show a ++ show b ++ show c ++ " " | [a:b:c]<- xs])
-score ((a:b:[]):xs) = "|" ++ (calcTwo a b) ++ (score xs)
+score ((a:b:[]):xs)   = "|" ++ (calcTwo a b) ++ (score xs)
 score ((a:b:c:[]):xs) = "|" ++ (calcThree a b c) ++ (score xs)
-score [] = ""
+score []              = ""
 
 main = do
   -- x <- getInts -- < 1 2 3 4 5 6

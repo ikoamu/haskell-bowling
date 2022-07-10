@@ -1,11 +1,11 @@
 module CalcSpec (spec) where
 
-import Test.Hspec
-import Calc (calcOne, calcTwo, calcThree)
+import           Calc       (calcOne, calcThree, calcTwo)
+import           Test.Hspec
 
 spec :: Spec
 spec = do
-  describe "Calc.calcOne" $ do
+  describe "calcOne" $ do
     it "X" $ do
       calcOne 10 `shouldBe` "X"
 
@@ -21,7 +21,7 @@ spec = do
       calcOne 8 `shouldBe` "8"
       calcOne 9 `shouldBe` "9"
 
-  describe "Calc.calcTwo" $ do
+  describe "calcTwo" $ do
     it "|X|-|" $ do
       calcTwo 10 0 `shouldBe` "X -"
 
@@ -36,7 +36,7 @@ spec = do
       calcTwo 1 8 `shouldBe` "1 8"
       calcTwo 9 0 `shouldBe` "9 0"
 
-  describe "Calc.calcThree" $ do
+  describe "calcThree" $ do
     it "|X|X|X|" $ do
       calcThree 10 10 10 `shouldBe` "XXX"
 
@@ -52,5 +52,5 @@ spec = do
       calcThree 10 10 8 `shouldBe` "XX8"
       calcThree 10 10 9 `shouldBe` "XX9"
 
-    it "X9-" $ do
+    it "|X|0-9|-|" $ do
       calcThree 10 0 0 `shouldBe` "X0 0"

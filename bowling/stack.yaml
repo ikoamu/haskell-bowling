@@ -35,7 +35,9 @@ packages:
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 #
-# extra-deps:
+extra-deps:
+  - ghc-lib-parser-9.2.3.20220709@sha256:c50fbbb5d1095dcc916f7dac7336d4a373077aca0e02a5c5ea16bffb5e61c931,12741
+  - ghc-lib-parser-ex-9.2.1.0@sha256:cf9082b394e67f3396d0dd7c5d14e3aa43d95efbb74e75d51905f32f694f6523,3493
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
